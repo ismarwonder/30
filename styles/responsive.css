@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .activities-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .user-section {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .activity-card {
+        padding: 1.5rem;
+    }
+} 

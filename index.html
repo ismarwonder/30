@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-års Födelsedagsplanering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button id="burgerMenuBtn" class="burger-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h1 id="eventTitle">30-års Födelsedag</h1>
+            <div id="userSection" class="user-section">
+                <div id="loginForm" class="login-form">
+                    <h2>Välkommen!</h2>
+                    <p>Ange ditt namn för att komma igång</p>
+                    <form id="nameForm">
+                        <input type="text" id="userName" placeholder="Ditt förnamn" required>
+                        <button type="submit">Fortsätt</button>
+                        <p id="loginError" class="error-message" style="display: none;"></p>
+                    </form>
+                </div>
+                <div id="userInfo" class="user-info" style="display: none;">
+                    <p>Välkommen, <span id="currentUserName"></span>!</p>
+                    <button id="logoutButton">Logga ut</button>
+                </div>
+            </div>
+        </header>
+
+        <section id="eventInfoSection" class="event-info-section" style="display: none;">
+            <h2>Om Dagen</h2>
+            <p>Är så taggad att umgås med er för min 30-års födelsedag! Skitkul att ni kommer med! </p>
+            <br>
+            <p>Här finns information om vad som är planerat och annat viktigt för dagen.</p>
+            <br>
+            <p>Jag har bokat Crazy Underground Golf och middag på Silvis. Anmäl er nedan på vilka delar/aktiviterer ni kan komma på senast den 23 maj. Resterande delar av kvällen är helt frivilliga och är mer öppet där vi ser vart kväller tar oss :)</p>
+        </section>
+
+        <main id="mainContent" style="display: none;">
+            <div class="activities-container" id="activitiesContainer">
+                <!-- Activities will be dynamically inserted here -->
+            </div>
+        </main>
+
+        <footer>
+            <p>Taggad att umgås med er för min 30-års födelsedag!</p>
+        </footer>
+    </div>
+
+    <!-- Slider Panel for Invited Guests -->
+    <div id="guestSlider" class="guest-slider">
+        <h2>Inbjudna Gäster (<span id="invitedCount">0</span>)</h2>
+        <ul id="invitedGuestsList">
+            <!-- Guest names will be dynamically inserted here -->
+        </ul>
+    </div>
+
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,171 @@
+.event-info-section p {
+    text-align: left;
+}
+
+.activities-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.activity-card {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid rgba(224, 197, 110, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--hover-shadow);
+    border-color: rgba(224, 197, 110, 0.5);
+}
+
+.activity-card h2 {
+    color: var(--primary-color);
+    font-family: var(--font-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid rgba(224, 197, 110, 0.2);
+    padding-bottom: 0.8rem;
+}
+
+.activity-info {
+    margin-bottom: 1rem;
+}
+
+.activity-info p {
+    margin-bottom: 0.5rem;
+}
+
+.activity-info p strong {
+    font-weight: 600;
+    color: rgba(234, 234, 234, 0.7);
+    margin-right: 0.5em;
+}
+
+.activity-card h3 {
+    font-size: 1rem;
+    color: rgba(234, 234, 234, 0.7);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.guest-list {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    flex-grow: 1;
+}
+
+.guest-list li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.guest-list li:last-child {
+    border-bottom: none;
+}
+
+.activity-card button {
+    margin-top: auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.activity-card button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(224, 197, 110, 0.2);
+}
+
+.activity-card button.remove {
+    background-color: transparent;
+    border-color: #aaa;
+    color: #aaa;
+}
+
+.activity-card button.remove:hover {
+    background-color: #aaa;
+    color: var(--secondary-color);
+    border-color: #aaa;
+    box-shadow: 0 4px 15px rgba(170, 170, 170, 0.2);
+}
+
+.event-info-section {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--box-shadow);
+    border: 1px solid rgba(224, 197, 110, 0.2);
+    text-align: center;
+}
+
+.event-info-section h2 {
+    color: var(--primary-color);
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.event-info-section p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.action-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.partner-select-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;
+    color: #f0f0f0;
+}
+
+.partner-select {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9em;
+    cursor: pointer;
+    min-width: 200px;
+    box-sizing: border-box;
+} 

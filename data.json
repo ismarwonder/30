@@ -1,0 +1,69 @@
+{
+  "eventName": "Ismars 30-års födelsedag!",
+  "invitedGuests": [
+    "Hanna",
+    "Raed",
+    "Sandra",
+    "Lejla",
+    "Selma",
+    "Felix",
+    "Amar",
+    "Anes",
+    "Johanna",
+    "Miro",
+    "Emelie",
+    "Tina",
+    "Sarah",
+    "Leilin",
+    "Adrian",
+    "Esmeralda",
+    "Joakim",
+    "Simon",
+    "Humar",
+    "Ismar"
+  ],
+  "partnerships": [
+    { "person1": "Leilin", "person2": "Adrian" },
+    { "person1": "Johanna", "person2": "Miro" },
+    { "person1": "Amar", "person2": "Anes" },
+    { "person1": "Ismar", "person2": "Humar" }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "name": "Crazy Underground Golf",
+      "time": "18:30",
+      "location": "Kaserntorget 7, 411 18, Göteborg, Sverige",
+      "description": "Samling utanför Golfklubben. Vi har då typ 20 min på oss att klä av oss och ordna oss inför den faktiska bokningen 18:55. Vi spelar 9 hål och tar ca 60 min. \n \n Jag har bokat och betalat för hela sällskapet (3000kr). Så Swisha gärna 150kr per person till mig.",
+      "guests": [],
+      "isConfirmed": true
+    },
+    {
+      "id": 2,
+      "name": "Middag på Silvis",
+      "time": "20:30",
+      "location": "Nordhemsgatan 18, 413 06 Göteborg",
+      "description": "Palestinsk Meze!! Så gott! Det blir kanske lite tight mellan golfen och middagensbokningen men det löser vi. Är 15 min promenad från Golfklubben eller så tar vi spårvagn. \n \n Eftersom det vi är ett stort sällskap som bokar så kommer vi välja enbart från avsmakningsmenyerna om jag förstår det rätt från restaurangen. Skriv till mig för allergier eller liknande.",
+      "guests": [],
+      "isConfirmed": true
+    },
+    {
+      "id": 3,
+      "name": "Ölhäng",
+      "time": "23:00",
+      "location": "Vart vi känner för",
+      "description": "Vi ser vart kvällen leder oss! Om man vill och orkar så går vi någonstans och har det kul bara! Vi har ju hela andralång osv runt hörnet ;)",
+      "guests": [],
+      "isConfirmed": true
+    },
+    {
+      "id": 4,
+      "name": "Rave",
+      "time": "01:00",
+      "location": "TBA",
+      "description": "Jag gillar ju Raves än utgång i klubbar hahah. Förhoppningsvis så kommer det vara ett rave på något ställe, om inte så löser man något annat kanske. De se inte orkar behöver sjävklart inte hänga med <3 \n \n Detaljer om rave kommer senare.",
+      "guests": [],
+      "isConfirmed": true
+    }
+  ]
+} 

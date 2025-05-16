@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #E0C56E;
+    --secondary-color: #013220;
+    --background-color: #013220;
+    --card-background: #0B4F3A;
+    --text-color: #EAEAEA;
+    --border-radius: 6px;
+    --box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    --hover-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    --font-primary: 'Playfair Display', serif;
+    --font-secondary: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-secondary);
+    background-color: var(--background-color);
+    background-image: none;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #F0D88A;
+    color: var(--secondary-color);
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(224, 197, 110, 0.2);
+}
+
+#logoutButton {
+    background-color: transparent;
+    border: 1px solid #aaa;
+    color: #aaa;
+}
+
+#logoutButton:hover {
+    background-color: #aaa;
+    color: var(--secondary-color);
+    border-color: #aaa;
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(170, 170, 170, 0.2);
+}
